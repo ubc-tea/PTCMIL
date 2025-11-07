@@ -34,16 +34,16 @@ cd survival
 The code of running on four datasets.
 ```bash
 ### BLCA
-CUDA_VISIBLE_DEVICES=0 python main_survival.py --data_root_dir PATH_TO_FEATURE --split_dir tcga_blca --model_type ptcmil --mode path --which_splits 5foldcv --reg 1e-5 --lr 2e-4 --merge_token --moving_pmt --momentum 0.1 --cluster_number 5  --beta 0.1 --pmt_clu
+CUDA_VISIBLE_DEVICES=0 python main_survival.py --data_root_dir PATH_TO_FEATURE --split_dir tcga_blca --model_type ptcmil --mode path --which_splits 5foldcv --reg 1e-5 --lr 2e-4 --merge_token --moving_pmt --momentum 0.1 --cluster_number 5  --alpha 0.1 --pmt_clu
 
 ### BRCA
-CUDA_VISIBLE_DEVICES=0 python main_survival.py --data_root_dir PATH_TO_FEATURE --split_dir tcga_brca --model_type ptcmil --mode path --which_splits 5foldcv --reg 1e-5 --lr 2e-4 --merge_token --moving_pmt --momentum 0.1 --cluster_number 5  --beta 0.1 --pmt_clu
+CUDA_VISIBLE_DEVICES=0 python main_survival.py --data_root_dir PATH_TO_FEATURE --split_dir tcga_brca --model_type ptcmil --mode path --which_splits 5foldcv --reg 1e-5 --lr 2e-4 --merge_token --moving_pmt --momentum 0.1 --cluster_number 5  --alpha 0.1 --pmt_clu
 
 ### CRC
-CUDA_VISIBLE_DEVICES=0 python main_survival.py --data_root_dir PATH_TO_FEATURE --split_dir tcga_crc --model_type ptcmil --mode path --which_splits 5foldcv --reg 1e-5 --lr 2e-4 --merge_token --moving_pmt --momentum 0.1 --cluster_number 5  --beta 0.1 --pmt_clu
+CUDA_VISIBLE_DEVICES=0 python main_survival.py --data_root_dir PATH_TO_FEATURE --split_dir tcga_crc --model_type ptcmil --mode path --which_splits 5foldcv --reg 1e-5 --lr 2e-4 --merge_token --moving_pmt --momentum 0.1 --cluster_number 5  --alpha 0.1 --pmt_clu
 
 ### LUAD
-CUDA_VISIBLE_DEVICES=0 python main_survival.py --data_root_dir PATH_TO_FEATURE --split_dir tcga_luad --model_type ptcmil --mode path --which_splits 5foldcv --reg 1e-5 --lr 2e-4 --merge_token --moving_pmt --momentum 0.1 --cluster_number 5  --beta 0.1 --pmt_clu
+CUDA_VISIBLE_DEVICES=0 python main_survival.py --data_root_dir PATH_TO_FEATURE --split_dir tcga_luad --model_type ptcmil --mode path --which_splits 5foldcv --reg 1e-5 --lr 2e-4 --merge_token --moving_pmt --momentum 0.1 --cluster_number 5  --alpha 0.1 --pmt_clu
 
 
 ```
