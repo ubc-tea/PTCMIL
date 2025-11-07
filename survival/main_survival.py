@@ -111,7 +111,8 @@ parser.add_argument('--moving_pmt', action='store_true', default=False)
 parser.add_argument('--momentum',  type=float, default=0.2)
 parser.add_argument('--pmt_clu', action='store_true', default=False)
 parser.add_argument('--merge_token', action='store_true', default=False)
-parser.add_argument('--alpha', 			 type=float, default=0.2)
+parser.add_argument('--alpha', type=float, default=0.2)
+parser.add_argument('--input_dim', type=int, default=1024)
 parser.add_argument('--lr_scheduler', type=str,
                     choices=['cosine', 'linear', 'constant'], default='cosine')
 parser.add_argument('--warmup_steps', type=int,
@@ -199,7 +200,7 @@ if not os.path.isdir(args.results_dir):
     os.mkdir(args.results_dir)
 
 
-exp_code = str(args.exp_code) + '_alpha'+str(args.alpha)+'_decay'+str(args.momentum)+ '_s{}'.format(args.seed)
+exp_code = str(args.exp_code) + '_beta'+str(args.beta)+'_decay'+str(args.momentum)+ '_s{}'.format(args.seed)
 
 print("===="*30)
 print("Experiment Name:", exp_code)
