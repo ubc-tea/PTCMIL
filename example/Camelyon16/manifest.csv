@@ -1,0 +1,3 @@
+slide_id,label,wsi_path,feature_pt_path,feature_h5_path,wsi_source,feature_pt_source,feature_h5_source
+normal_001,normal,slides/normal_001.tif,UNI_c16_pt/pt_files/normal_001.pt,out/h5_files/normal_001.h5,PathML CAMELYON16 Google Drive,/bigdata/WSI/Camelyon16/UNI_c16_pt/pt_files/normal_001.pt,/bigdata/beidi/Camelyon16/out/h5_files/normal_001.h5
+tumor_038,tumor,slides/tumor_038.tif,UNI_c16_pt/pt_files/tumor_038.pt,out/h5_files/tumor_038.h5,PathML CAMELYON16 Google Drive,/bigdata/WSI/Camelyon16/UNI_c16_pt/pt_files/tumor_038.pt,/bigdata/beidi/Camelyon16/out/h5_files/tumor_038.h5

@@ -1,0 +1,2 @@
+checkpoint_path,source_experiment,model_type,dataset,features,fold,test_auc,test_acc,val_auc,val_acc,sha256
+camelyon16_uni_ptcmil_clu7_best.pt,local_vit_prompt_clu_UNI_adam_alpha01_moving_momentum1_normassn_hard_clu7_s1,vit_pmt_clu,Camelyon16,UNI,2,0.99921875,0.984375,1.0,1.0,214ba386e215f622efdb439c5408d5fd8af25aee4e0e709a1a8170bfa9ca9283
